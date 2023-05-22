@@ -1,6 +1,6 @@
 import numpy as np
 
-class ManlyTest:
+class ManlyRandomizationTest:
     def __init__(self, group1: np.array, group2: np.array, iterations: int = 1e5):
         self.group1 = group1
         self.group2 = group2
