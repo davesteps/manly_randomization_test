@@ -17,13 +17,14 @@ Here is a simplified version of how a randomization test between means can be co
 
 The null hypothesis for this test is that the group labels do not matter; in other words, there is no difference in means between the two groups. If the p-value is less than your predetermined significance level (often 0.05), you would reject the null hypothesis and conclude that there is a statistically significant difference in means between the two groups.
 
-Manly's work has contributed significantly to this field and the development of these kinds of procedures.
 
 ```
+from manly_randomization_test import RandomizationTest
+
 group1 = np.array([1, 2, 3, 4, 5])
 group2 = np.array([2, 3, 4, 5, 6])
 
-test = ManlyRandomizationTest(group1, group2)
+test = RandomizationTest(group1, group2)
 p_value = test.test()
 
 print('p-value:', p_value)
