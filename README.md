@@ -30,7 +30,7 @@ from manly_randomization_test import RandomizationTest
 import numpy as np
 
 group1 = np.array([1, 2, 3, 4, 5])
-group2 = np.array([20, 30, 40, 50, 60])
+group2 = np.array([10, 11, 12, 13, 14])
 
 test = RandomizationTest(group1, group2)
 p_value = test.test()
