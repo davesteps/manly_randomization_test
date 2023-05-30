@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class RandomizationTest:
     def __init__(self, group1: np.array, group2: np.array, iterations: int = 1e5):
         self.group1 = group1
@@ -14,7 +15,7 @@ class RandomizationTest:
 
     def shuffle(self):
         np.random.shuffle(self.combined)
-        return self.combined[:self.group1_n], self.combined[self.group1_n:]
+        return self.combined[: self.group1_n], self.combined[self.group1_n :]
 
     def test(self):
         observed_difference = self.observed_difference()
@@ -26,4 +27,3 @@ class RandomizationTest:
                 count += 1
 
         return count / self.iterations
-

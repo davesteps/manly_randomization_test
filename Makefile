@@ -9,5 +9,6 @@ test:
 lint:
 	flake8
 
-format:
-	black .
+fixstyle:  ## fix black and isort style violations
+	isort --profile black manly_randomization_test tests
+	black manly_randomization_test tests
