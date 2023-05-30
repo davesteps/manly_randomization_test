@@ -9,8 +9,7 @@ class TestSimpleCase(unittest.TestCase):
 
     """unittest methods for testing"""
 
-    def test_empty_file(self):
-        """Test that"""
+    def test_simple(self):
 
         group1 = np.array([1, 2, 3, 4, 5])
         group2 = np.array([1, 2, 3, 4, 5])
