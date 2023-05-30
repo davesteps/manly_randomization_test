@@ -19,6 +19,7 @@ dev = [
     "isort",
     "mypy",
     "pytest",
+    "twine"
 ]
 
 [tool.black]
