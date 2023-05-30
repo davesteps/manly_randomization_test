@@ -1,0 +1,32 @@
+[project]
+name = "manly_randomization_test"
+version = "0.1"
+description = "A python implementation of Manly randomization test"
+readme = "README.md"  # Replace this with your readme file, if you have one
+authors = [
+    {name = "David Stephens", email = "davesteps@gmail.com"}
+]
+license = "Apache-2.0"
+homepage = "https://github.com/davesteps/manly_randomization_test"
+
+[project.urls]
+Repository = "https://github.com/davesteps/manly_randomization_test"
+
+[project.dependencies]
+numpy = "*"
+
+[project.dev-dependencies]
+pytest = "^6.2.5"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["flit_core >=3,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.flake8]
+exclude = [
+    'tests/',  # If you want to exclude the tests directory from flake8
+]
