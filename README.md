@@ -19,7 +19,7 @@ Here is an overview of how a randomization test between means is conducted:
 
 The null hypothesis for this test is that the group labels do not matter; in other words, there is no difference in means between the two groups. If the p-value is less than your predetermined significance level (often 0.05), you would reject the null hypothesis and conclude that there is a statistically significant difference in means between the two groups.
 
-## Istallation
+## Installation
 ```python
 pip install manly_randomization_test
 ```
