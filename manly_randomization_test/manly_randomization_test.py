@@ -8,7 +8,7 @@ class RandomizationTest:
         self.group1_n = len(group1)
         self.group2_n = len(group2)
         self.combined = np.concatenate((group1, group2))
-        self.iterations = iterations
+        self.iterations = int(iterations)
 
     def observed_difference(self):
         return np.mean(self.group1) - np.mean(self.group2)
