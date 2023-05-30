@@ -19,12 +19,12 @@ class RandomizationTest:
         return self.combined[: self.group1_n], self.combined[self.group1_n :]
 
     def test(self):
-        actual_diff = self.calc_diff(self.group1,self.group2)
+        actual_diff = self.calc_diff(self.group1, self.group2)
         count = 0
 
         for _ in range(self.iterations):
             group1, group2 = self.shuffle()
-            if self.calc_diff(group1,group2) >= actual_diff:
+            if self.calc_diff(group1, group2) >= actual_diff:
                 count += 1
 
         return count / self.iterations
